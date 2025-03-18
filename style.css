@@ -1,0 +1,46 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #0d0e0d;
+    color: rgb(240, 23, 23);
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav table {
+    width: 100%;
+    background-color: #c52424;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+nav table td {
+    text-align: center;
+    padding: 15px;
+}
+
+nav table td a {
+    text-decoration: none;
+    color: rgb(25, 241, 115);
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav table td a:hover {
+    background-color: #0c0e0c;
+    color: rgb(247, 21, 77);
+    border-radius: 5px;
+    padding: 10px;
+}
+nav, header {
+    margin-bottom: 20px;
+}

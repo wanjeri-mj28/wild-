@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WILDLIFE</title>
+        <link rel="stylesheet" href="style2.css">
+        </head>
+    <body>
+        <h1>WILDLIFE SANCTUARY</h1>
+        <IMG SRC="C:\Users\pc\Downloads/download.jpeg" ALT="Wildlife Sanctuary logo" WIDTH="200" HEIGHT="200">
+<nav>
+    <table>
+        <tr>
+            <td><a href="#" onclick="showContent('home')">Home</a></td>
+            <td><a href="#" onclick="showContent('about')">About Us</a></td>
+            <td><a href="#" onclick="showContent('involved')">Get Involved</a></td>
+            <td><a href="animal.html">animal</a>
+                <select id="animalDropdown" onchange="navigateToAnimalPage()">
+                    <option value="" disabled selected>Select an Animal</option>
+                    <option value="warthog.html">Warthog</option>
+                    <option value="cheetah.html">Cheetah</option>
+                    <option value="Elephant.html">Elephant</option>
+                    <option value="Jackals.html">Jackal</option>
+                    <option value="foxes.html">Foxes</option>
+                    <option value="Dik dik.html">Dik Dik</option>
+                    <option value="hyenas.html">Hyena</option>
+                    <option value="whitebellybird.html">White Belly Bird</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    </nav>
+
+    <script>
+        function navigateToAnimalPage() {
+            const dropdown = document.getElementById('animalDropdown');
+            const selectedValue = dropdown.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    <div id="home" style="display: none;">
+        <h2>home</h2>
+        <img src="C:\Users\pc\Desktop\wildlife/wildlife.webp" alt="Wildlife" width="735" height="490">
+        <p>An incredible 25% of the world's biodiversity is found in Africa—and Kenya, on the eastern coast of the African continent, is one of the ten most biodiverse countries on earth.
+
+            According to recent estimates, Kenya is home to 25,000 animal species, including many large mammals, 7,000 plant species, and 2,000 fungi and bacteria species. These species thrive in Kenya's rich array of ecosystems, from lush forests and savannahs to the snow-capped peaks of Mount Kenya and arid scrublands. There are also plenty of aquatic habitats in Kenya, both along the coast and inland. Kenya is home to 467 inland lake and wetland habitats, which support a diverse selection of wildlife and animals.
+            
+            Rich biodiversity and a wide variety of ecosystems allow a large range of animals and wildlife to thrive in Kenya. So, let's take a closer look at 20 of the amazing animals you can find in Kenya.</p>
+     </div>
+        <div id="about" style="display: none;">
+            <h2>About Us</h2>
+            <img src="C:\Users\pc\Desktop\wildlife/logo.jpeg" alt="Wildlife Sanctuary logo" width="735" height="490">
+            <p>Wildlife Sanctuary is a non-profit organization that works to protect wildlife and their habitats. We work with local communities, governments, and other organizations to protect wildlife and their habitats. We also work to raise awareness about the importance of protecting wildlife and their habitats. Our mission is to protect wildlife and their habitats for future generations.</p>            
+            </div>
+            <div id="involved" style="display: none;">
+                <h2>Get involved</h2>
+    
+                <p>There are many ways you can get involved with Wildlife Sanctuary. You can volunteer your time, donate money, or help raise awareness about the importance of protecting wildlife and their habitats. You can also help by adopting an animal or sponsoring a habitat. No matter how you choose to get involved, your support will help us protect wildlife and their habitats for future generations.</p>
+            </div>
+            <script>
+                function showContent(id) {
+                    const home = document.getElementById('home');
+                    const about = document.getElementById('about');
+                    const involved = document.getElementById('involved');
+                    home.style.display = 'none';
+                    about.style.display = 'none';
+                    involved.style.display = 'none';
+                    document.getElementById(id).style.display = 'block';
+                }
+            </script>
+            <footer>
+                <p>JOY WANJERI MACHIRA-24/06886</p>
+                </footer>
+ </body>
+    </html>

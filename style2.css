@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #14ec5c;
+    color: #333;
+    text-align: center;}
+
+h1 {
+    background-color: #0e0d0f;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+nav {
+    margin: 20px auto;
+    background-color: #662124;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(211, 17, 236, 0.2);
+}
+
+nav table {
+    width: 100%;
+}
+
+nav td {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #52b788;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2d6a4f;
+}
+select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+#home, #about, #involved {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#home img, #about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+footer {
+    background-color: #059b57;
+    color: rgb(3, 3, 3);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+button:hover {
+    background-color: #2d6a4f;
+    color: white;
+}
